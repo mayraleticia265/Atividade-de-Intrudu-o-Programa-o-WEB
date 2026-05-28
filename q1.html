@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alteração de texto na tela</title>
 </head>
 <body>
-    <header>Meu IFPI</header>
-    <main>
-        <section>
-            <h2>Olá meu IFPI</h2>
-        <button onclick="mostrarMensagem()">Clique Aqui!</button>
-        </section>
-    </main>
-    <script src="./script.js"></script>
+     <p id="texto">Este é o texto inicial.</p>
+
+  <button onclick="alterarTexto()">Clique aqui</button>
+
+  <script>
+    function alterarTexto() {
+      document.getElementById("texto").innerText = "O texto foi alterado!";
+    }
+  </script>
 </body>
 </html>
