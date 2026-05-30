@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificação de Idade</title>
+</head>
+<body>
+
+  <h2>Verificação de Idade</h2>
+
+  <input type="number" id="idade" placeholder="Digite sua idade">
+  <button onclick="verificarIdade()">Verificar</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function verificarIdade() {
+      let idade = document.getElementById("idade").value;
+      let resultado = document.getElementById("resultado");
+
+      if (idade >= 18) {
+        resultado.innerHTML = "Maior de idade";
+      } else {
+        resultado.innerHTML = "Menor de idade";
+      }
+    }
+  </script>
+
+</body>
+</html>
